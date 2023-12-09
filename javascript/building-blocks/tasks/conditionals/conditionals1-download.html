@@ -24,7 +24,7 @@
   
   
   <script>
-    let season = 'summer';
+    let season = "summer";
     let response;
 
     // Add your code here
@@ -34,8 +34,10 @@
       response = "It's winter! Better wear a jacket!";
     } else if (season === "fall") {
       response = "It's fall! Go outside and enjoy the autumn trees!";
-    } else {
+    } else if (season === "spring") {
       reponse = "It's spring!!!";
+    } else {
+      response = "Whatever that season is, I hope it's good out.";
     }
 
     // Don't edit the code below here!
