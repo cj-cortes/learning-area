@@ -51,6 +51,10 @@
       return 2 * pi * r;
     }
 
+    function cuberoot(num) {
+      return Math.cbrt(num);
+    }
+
     // A way to print out the information
     input.addEventListener("change", () => {
       const num = parseFloat(input.value);
@@ -61,7 +65,8 @@
       para.textContent += `${num} cubed is ${cubed(num)}. `;
       para.textContent += `${num} factorial is ${factorial(num)}. `;
       para.textContent += `Squareroot of ${num} is ${squareroot(num)}. `;
-      para.textContent += `The circumference of r=${num} is ${circumference(num)}. `;
+      para.textContent += `The circumference of the circle r=${num} is ${circumference(num)}. `;
+      para.textContent += `The cuberoot of ${num} is ${cuberoot(num)}. `;
     }
   });
 
