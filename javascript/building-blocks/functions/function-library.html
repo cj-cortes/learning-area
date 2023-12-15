@@ -41,6 +41,16 @@
       return num;
     }
 
+    function squareroot(num) {
+      return Math.sqrt(num);
+    }
+
+    function circumference(num) {
+      let r = num;
+      let pi = 3.1415926535;
+      return 2 * pi * r;
+    }
+
     // A way to print out the information
     input.addEventListener("change", () => {
       const num = parseFloat(input.value);
@@ -50,6 +60,8 @@
       para.textContent = `${num} squared is ${squared(num)}. `;
       para.textContent += `${num} cubed is ${cubed(num)}. `;
       para.textContent += `${num} factorial is ${factorial(num)}. `;
+      para.textContent += `Squareroot of ${num} is ${squareroot(num)}. `;
+      para.textContent += `The circumference of r=${num} is ${circumference(num)}. `;
     }
   });
 
